@@ -5,14 +5,15 @@ class Counter extends Component {
     tags: ["tag1", "tag2", "tag3"]
   };
 
-  constructor() {
-    super();
-    //console.log("Constructor", this);
-    this.handleIncrement = this.handleIncrement.bind(this);
-  }
+  // constructor() {
+  // super();
+  //console.log("Constructor", this);
+  //this.handleIncrement = this.handleIncrement.bind(this);
+  // }
 
   handleIncrement = () => {
-    console.log("Increment Clicked", this);
+    this.setState({ count: this.state.count + 1 });
+    //console.log("Increment Clicked", this);
     // obj.method();
     // function();
   };
