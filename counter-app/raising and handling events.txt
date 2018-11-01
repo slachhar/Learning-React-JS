@@ -1,0 +1,1 @@
+The component that owns a piece oth the state, should be the one modifying it.
