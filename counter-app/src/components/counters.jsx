@@ -18,10 +18,23 @@ class Counters extends Component {
     this.setState({ counters: counters });
   };
 
+  handleReset = () => {
+    const counters = this.state.counters.map(c => {
+      c.value = 0;
+      return c;
+    });
+    this.setState({ counters });
+  };
   //map method is used in place of foreach loop
   render() {
     return (
       <div>
+        <button
+          onClick={this.handleReset}
+          className="btn btn-primary btn-sm m-2"
+        >
+          Reset
+        </button>
         {this.state.counters.map(counter => (
           <Counter
             onDelete={this.handleDelete}
