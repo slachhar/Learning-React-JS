@@ -4,6 +4,7 @@ import Counter from "./counter";
 class Counters extends Component {
   //map method is used in place of foreach loop
   render() {
+    console.log("counters - rendered");
     const { onReset, counters, onDelete, onIncrement } = this.props;
     return (
       <div>
