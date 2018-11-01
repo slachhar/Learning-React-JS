@@ -1,0 +1,5 @@
+We can install React Debugger tools as an extension in chrome.
+it shows the props and state of the element in different tab called 
+React.
+Once you select one element, it gives you $r.
+You use this object to fetch the element and its action in the console tab
