@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import Counter from "./counter";
 
 class Counters extends Component {
+  componentDidUpdate(prevProps, prevState) {
+    console.log("prevProps", prevProps);
+    console.log("prevState", prevState);
+    if (prevProps.counter.value !== this.props.counter.value) {
+      //Ajax call and get the updated object from the server
+    }
+  }
   //map method is used in place of foreach loop
   render() {
     console.log("counters - rendered");
