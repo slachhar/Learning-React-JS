@@ -1,0 +1,3 @@
+State is local to the component
+Props is a way to send data to the component. and it is readonly. We cannot chnage the property of the props object in the component when it is sent.
+If we need to modify the props property during the lifecycle of the component, we should assign thee value to the state of the component and then modify the state of the component
